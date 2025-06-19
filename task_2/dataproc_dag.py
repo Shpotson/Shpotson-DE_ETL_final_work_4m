@@ -53,7 +53,7 @@ with DAG(
     # 2 этап: запуск задания PySpark
     poke_spark_processing = DataprocCreatePysparkJobOperator(
         task_id='dp-cluster-pyspark-task',
-        main_python_file_uri=f's3a://airflow-dag-storage-035493486/dataproc/transform_personalities.py',
+        main_python_file_uri=f'https://storage.yandexcloud.net/airflow-dag-storage-035493486/dataproc/transform_personalities.py',
     )
 
     # 3 этап: удаление кластера Yandex Data Processing
