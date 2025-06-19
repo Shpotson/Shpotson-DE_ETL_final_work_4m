@@ -1,0 +1,1 @@
+SELECT avg(friends_circle_size), personality FROM personality GROUP BY personality;
